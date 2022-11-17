@@ -1,11 +1,14 @@
-function writeCards([name1, name2, name3], event) {
-    return writeCards = [
-        `Thank you, ${name1}, for the wonderful ${event} gift!`,
-        `Thank you, ${name2}, for the wonderful ${event} gift!`,
-        `Thank you, ${name3}, for the wonderful ${event} gift!`,
-]
+let names = ["Guadalupe", "Ollie", "Aki"]
 
+function writeCards(names, event){
+    let message = []
+    for(let i = 0; i < names.length; i++){
+        message.push("Thank you, " + names[i] + ", for the wonderful " + event + " gift!")
+    }
+    return message 
+        
 }
+console.log(writeCards(names, "surprise"))
 const num = 10;
 function countDown(num) {
 while(num >= 0 ) {
@@ -14,4 +17,3 @@ while(num >= 0 ) {
    }
    return num;
 }
-  
